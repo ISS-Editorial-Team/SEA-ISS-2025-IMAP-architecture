@@ -2,12 +2,12 @@ format: jb-book
 root: README
 
 parts:
-  - caption: Premable
+  - caption: Contents
     chapters:
-      - file: submission-guidelines.md
-      - file: how-to-cite-this-paper.md
-  - caption: IMAP Processing Design
-    chapters:
-      - file: notebooks/ISS-2025.ipynb
+      - file: notebooks/overview.md
+      - file: notebooks/design.md
+      - file: notebooks/disadvantages.md
+      - file: notebooks/advantages.md
+      - file: notebooks/conclusion.md
 
 
