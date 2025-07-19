@@ -46,7 +46,7 @@ Microservice is a general term for these kinds of smaller processes. They don't 
 
 Each microservice is a little piece of the factory. Everyone takes something in, builds a very specific piece on, and then hands it forward to the next service. A good rule of thumb for the size of a microservice is that it should be small enough for one developer to rewrite in one day. 
 
-#### Advantages of Microservices:
+### Advantages of Microservices:
 
 **Scalability**: With microservices, you are able to scale each piece of the processing separately from every other piece. Within our processing, we start broad when files arrive, to ensure we don't miss any by accident. However, as we go, we decide at various steps not to continue in the pipeline. For every file that arrives, we definitely want to index it in our database. However, we may not want to actually run any processing on that file. Since the indexing and the processing occur at separate places, we can have our lightweight indexer run frequently, but keep the heavier, more expensive servers for processing dormant until they are necessary. 
 
