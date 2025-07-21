@@ -1,0 +1,7 @@
+# Conclusion
+
+In the new paradigm of the cloud, software engineers need to change their thinking to use cloud-based resources to their full capabilities. In the cloud, time is money, which means smaller, quicker running processes are key. To accomplish this, we can use designs like microservices connected via queues and event driven triggering to horizontally scale small, simple processes. These smaller, simpler processes are also easier to maintain, update, and rewrite for long term maintenance. However, we need to carefully manage the information needed at every step in the pipeline, since this divides up the pipeline and no one service has a complete understanding of processing at any given time.
+
+In order to accomplish this, we use infrastructure as code to codify the complex pipeline in a reproducible and reviewable way. Using queues, we can decouple processing and add filters, parallelization, or new processes between existing services without having to modify the pipeline at large. The queues pass around events, which can then trigger processing as soon as all data is available, as well as limiting the amount of data moving around the entire system.
+
+All these tools and designs demonstrate the power of running in a cloud-first environment, where we can use all the services provided by AWS to reduce the amount of server maintenance and developer time needed to run our pipeline, while still passing on significant improvements on processing time, scaling and dependency management to our end users.
